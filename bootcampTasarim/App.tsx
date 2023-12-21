@@ -4,7 +4,7 @@ import CustomView from './Components/CustomView';
 
 const App = () => {
 
-  const sayi = [
+  const kutular = [
     {
       color: '#eb7662',
       text1: 'Head & Face',
