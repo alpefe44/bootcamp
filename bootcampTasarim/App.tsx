@@ -45,7 +45,7 @@ const App = () => {
       </View>
 
       {
-        sayi.map((item , index) => (
+        kutular.map((item , index) => (
           <CustomView key={index} color={item.color} text={item.text1} text2={item.text2} ></CustomView>
         ))
       }
