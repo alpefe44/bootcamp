@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="number" id="numberInput">
+    <button onclick="carpma()" style="width: 100px; height: 30px;">Çarp</button>
+    <h1 id="sonuc"></h1>
+</body>
+
+<script>
+    function carpma() {
+
+        let inputValue = document.getElementById('numberInput').value;
+
+        const sonuc = inputValue * 1.8;
+        document.getElementById('sonuc').innerText = sonuc;
+
+
+    }
+</script>
+
+</html>

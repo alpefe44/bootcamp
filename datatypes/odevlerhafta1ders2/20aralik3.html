@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="number1" type="number">
+    <input id="number2" type="number">
+
+    <button style="width: 100px; height: 30px;" onclick="hesapla('topla')">Topla</button>
+    <button style="width: 100px; height: 30px;" onclick="hesapla('cikar')">Çıkar</button>
+    <button style="width: 100px; height: 30px;" onclick="hesapla('bol')">Böl</button>
+    <button style="width: 100px; height: 30px;" onclick="hesapla('carp')">Çarp</button>
+</body>
+<script>
+    function hesapla(id) {
+        //alert(id)
+        const sayi1 = parseFloat(document.getElementById('number1').value);
+        const sayi2 = parseFloat(document.getElementById('number2').value);
+        if (sayi1 === "" || sayi2 === "") {
+            alert(" geçerli bir değer girin")
+            return
+        } else {
+            switch (id) {
+                case 'topla': 
+                    alert(sayi1 + sayi2) 
+                break; 
+                case 'cikar': 
+                    alert(sayi1 - sayi2) 
+                break; 
+                case 'bol': 
+                if (sayi2 !== 0) {
+                        alert(sayi1 / sayi2);
+                    } else {
+                        alert("sayıyı sıfıra bölemezsiniz");
+                    }
+                    break;
+                break; 
+                case 'carp': 
+                    alert(sayi1 * sayi2) 
+                break;
+                default: 
+                    break;
+            }
+        }
+    } </script>
+
+</html>
