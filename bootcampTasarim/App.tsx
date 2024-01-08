@@ -1,8 +1,10 @@
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
 import React from 'react';
 import CustomView from './Components/CustomView';
 
 const App = () => {
+
+  const [age, setAge] = React.useState(0);
 
   const kutular = [
     {
@@ -28,33 +30,38 @@ const App = () => {
 
   ];
 
-  return (
 
-    <View style={{ padding: 20 }}>
-      <View
-        style={{
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-        }}>
-        <Text style={{ color: 'gray' }}>Friday, 15 Dec</Text>
-        <Text style={{ color: 'gray' }}>Search</Text>
-      </View>
-      <View>
-        <Text style={{ fontSize: 30, fontWeight: 'bold' }}>Learn</Text>
-        <Text>Choose part of the body</Text>
-      </View>
+  function handleAge() {
+    setAge((prev) => console.log(prev + 1))
+}
+return (
 
-      {
-        kutular.map((item , index) => (
-          <CustomView key={index} color={item.color} text={item.text1} text2={item.text2} ></CustomView>
-        ))
-      }
-
+  <View style={{ padding: 20 }}>
+    <View
+      style={{
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+      }}>
+      <Text style={{ color: 'gray' }}>Friday, 15 Dec</Text>
+      <Text style={{ color: 'gray' }}>Search</Text>
     </View>
+    <View>
+      <Text style={{ fontSize: 30, fontWeight: 'bold' }}>Learn</Text>
+      <Text>Choose part of the body</Text>
+    </View>
+    <Button title='BANA BAS' onPress={() => handleAge()}></Button>
+
+    {
+      kutular.map((item, index) => (
+        <CustomView key={index} color={item.color} text={item.text1} text2={item.text2} ></CustomView>
+      ))
+    }
+
+  </View>
 
 
 
-  );
+);
 };
 
 export default App;

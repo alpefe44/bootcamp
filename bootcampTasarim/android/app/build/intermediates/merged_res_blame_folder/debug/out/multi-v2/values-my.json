@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.bootcamptasarim.app-mergeDebugResources-2:/values-my/values-my.xml",
+            "outputFile": "com.bootcamptasarim.app-mergeDebugResources-26:/values-my/values-my.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Alp\\.gradle\\caches\\transforms-3\\13659b94c66de92d98d7f8af61234b95\\transformed\\core-1.9.0\\res\\values-my\\values-my.xml",

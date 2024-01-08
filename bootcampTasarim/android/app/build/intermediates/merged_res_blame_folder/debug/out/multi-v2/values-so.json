@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.bootcamptasarim.app-mergeDebugResources-2:/values-so/values-so.xml",
+            "outputFile": "com.bootcamptasarim.app-mergeDebugResources-26:/values-so/values-so.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Alp\\.gradle\\caches\\transforms-3\\65f520f887f0d0f390437980af8cd371\\transformed\\jetified-react-android-0.73.1-debug\\res\\values-so\\values-so.xml",
